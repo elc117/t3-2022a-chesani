@@ -5,7 +5,7 @@ from itertools import product
 def init():#inicia o pygame
     pygame.display.set_caption('Chessani'); #nome do jogo
     pygame.init();
-    return pygame.display.set_mode([1920, 1080]); #tamanho do display
+    return pygame.display.set_mode([800, 800]); #tamanho do display
     
 def update(): 
     pygame.display.update();
@@ -29,3 +29,13 @@ def split(rc): #recebe a lista de linhas e colunas e divide em listas de 8, gera
 def draw():
     print('a');
 
+
+def cachorro(board):
+    cellSize = 100;
+    board.fill((0, 0, 0));
+    for x in range(0, 8, 2):
+        for y in range(0, 8, 2):
+            pygame.draw.rect(board, (255,255,255), (x*cellSize, y*cellSize, cellSize, cellSize));
+    for x in range(1, 9, 2):
+        for y in range(1, 9, 2):
+            pygame.draw.rect(board, (255,255,255), (x*cellSize, y*cellSize, cellSize, cellSize));

@@ -13,7 +13,8 @@ def gameLoop():
 
 
 if __name__ == '__main__':
-    #board.init();
-    #while gameLoop:
-    print(board.split(board.positions()));
-        
+    board_ = board.init();
+    while gameLoop:
+        #print(board.split(board.positions()));
+        board.cachorro(board_);
+        board.update();
