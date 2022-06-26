@@ -13,8 +13,9 @@ def gameLoop():
 
 
 if __name__ == '__main__':
+    display = board.displayInit();
     board_ = board.init();
+    board.draw(display);
     while gameLoop:
-        #print(board.split(board.positions()));
-        board.cachorro(board_);
+        board.drawPieces(display, board_);
         board.update();
