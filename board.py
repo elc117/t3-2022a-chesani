@@ -12,7 +12,7 @@ def displayInit():#inicia o pygame
     return pygame.display.set_mode([800, 800]); #tamanho do display
     
 def update(): 
-    pygame.display.update();
+    pygame.display.update(); #funcao de atualizar a tela do pygame
 
 def rangeToList(start, stop): #gera uma lista a partir de um intervalo
     return list(range(start, stop));
@@ -24,19 +24,27 @@ def productOfRC(rows, columns): #produto cartesiano das linhas e colunas
     return list(product(rows, columns));
 
 def positions():
-    return productOfRC(charRange(rangeToList(49, 57)), charRange(rangeToList(97, 105)));
+    return productOfRC(charRange(rangeToList(49, 57))[::-1], charRange(rangeToList(97, 105)));
 
 def split(rc): #recebe a lista de linhas e colunas e divide em listas de 8, gerando uma "matriz"
     return [rc[i:i + 8] for i in range(0, len(rc), 8)] #um exemplo de list comprehension
     
-def checkMate(board_):
+def checkMate(board_): #nao exatamente um checkmate, mas sim uma verificacao para ver se o rei esta no tabuleiro
     return False if ((True in (map((lambda x : ('King', 'white') in x), board_))) & (True in (map((lambda x : ('King', 'black') in x), board_)))) else True;
 
-def winner(board_):
+def winner(board_): #identifica o vencedor a partir do rei presente no tabuleiro
     return ' brancas ' if (True in (map((lambda x : ('King', 'white') in x), board_))) else ' pretas ';
 
-def congrats(winner):
+def congrats(winner): #mensagem de vitoria, usada a biblioteca tkinter
     messagebox.showinfo('Parabéns!', 'As' + winner + 'venceram! 😎')
+
+def moveNotation(x, y):
+    b = split(positions());
+    ant = b[x[0]][x[1]];
+    new = b[y[0]][y[1]];
+    a1 = ant[1] + ant[0];
+    a2 = new[1] + new[0];
+    print(a1 + ' x ' + a2);
 
 def draw(display): #desenha o tabuleiro base, sem levar em consideracao as pecas
     cellSize = 100;
@@ -122,8 +130,7 @@ def move(board_):
         x = getPos();
     while y == None:
         y = getPos();
-    print(x)
-    print(y)
+    moveNotation(x, y)
     aux = board_[x[0]][x[1]]
     board_[x[0]][x[1]] = ('empty', 'empty')
     board_[y[0]][y[1]] = aux
