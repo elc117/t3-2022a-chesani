@@ -124,13 +124,19 @@ def getPos():
                 c = pygame.mouse.get_pos()
                 return (int(c[1]/100), int(c[0]/100))
 
-def move(board_):
+def move(board_, player):
     x = y = None
     while x == None:
         x = getPos();
     while y == None:
         y = getPos();
+    if board_[x[0]][x[1]][1] != player:
+        return player;
     moveNotation(x, y)
     aux = board_[x[0]][x[1]]
     board_[x[0]][x[1]] = ('empty', 'empty')
     board_[y[0]][y[1]] = aux
+    if player == 'white':
+        return 'black';
+    else:
+        return 'white';
