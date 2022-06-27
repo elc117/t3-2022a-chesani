@@ -19,4 +19,4 @@ if __name__ == '__main__':
         board.draw(display);
         board.drawPieces(display, board_);
         board.update();
-        board.cachorro()
+        board.move(board_)

@@ -93,7 +93,7 @@ def drawPieces(display, board):
                     display.blit(blackQueen, (j*100,i*100));
                 if board[i][j] == ('Queen', 'white'):
                     display.blit(whiteQueen, (j*100,i*100));
-                if board[i][j] == ('King', 'black'):c
+                if board[i][j] == ('King', 'black'):
                     display.blit(blackKing, (j*100,i*100));
                 if board[i][j] == ('King', 'white'):
                     display.blit(whiteKing, (j*100,i*100));
@@ -101,3 +101,21 @@ def drawPieces(display, board):
                     display.blit(blackPawn, (j*100,i*100));
                 if board[i][j] == ('Pawn', 'white'):
                     display.blit(whitePawn, (j*100,i*100));
+
+def getPos():
+    for event in pygame.event.get():
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                c = pygame.mouse.get_pos()
+                return (int(c[1]/100), int(c[0]/100))
+
+def move(board_):
+    x = y = None
+    while x == None:
+        x = getPos();
+    while y == None:
+        y = getPos();
+    print(x)
+    print(y)
+    aux = board_[x[0]][x[1]]
+    board_[x[0]][x[1]] = ('empty', 'empty')
+    board_[y[0]][y[1]] = aux
