@@ -24,7 +24,7 @@ def productOfRC(rows, columns): #produto cartesiano das linhas e colunas
     return list(product(rows, columns));
 
 def positions():
-    return productOfRC(rangeToList(1, 9), charRange(rangeToList(97, 105)));
+    return productOfRC(charRange(rangeToList(49, 57)), charRange(rangeToList(97, 105)));
 
 def split(rc): #recebe a lista de linhas e colunas e divide em listas de 8, gerando uma "matriz"
     return [rc[i:i + 8] for i in range(0, len(rc), 8)] #um exemplo de list comprehension
@@ -93,7 +93,7 @@ def drawPieces(display, board):
                     display.blit(blackQueen, (j*100,i*100));
                 if board[i][j] == ('Queen', 'white'):
                     display.blit(whiteQueen, (j*100,i*100));
-                if board[i][j] == ('King', 'black'):
+                if board[i][j] == ('King', 'black'):c
                     display.blit(blackKing, (j*100,i*100));
                 if board[i][j] == ('King', 'white'):
                     display.blit(whiteKing, (j*100,i*100));
