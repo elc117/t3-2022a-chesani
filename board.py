@@ -1,7 +1,7 @@
 import pygame;
 import os;
 from itertools import product
-
+from tkinter import messagebox
 
 def empty(): #inicializa o tabuleiro sem nenhuma posicao
     return [[('empty', 'empty') for _ in range(0, 8)] for _ in range(0, 8)];
@@ -29,6 +29,15 @@ def positions():
 def split(rc): #recebe a lista de linhas e colunas e divide em listas de 8, gerando uma "matriz"
     return [rc[i:i + 8] for i in range(0, len(rc), 8)] #um exemplo de list comprehension
     
+def checkMate(board_):
+    return False if ((True in (map((lambda x : ('King', 'white') in x), board_))) & (True in (map((lambda x : ('King', 'black') in x), board_)))) else True;
+
+def winner(board_):
+    return ' brancas ' if (True in (map((lambda x : ('King', 'white') in x), board_))) else ' pretas ';
+
+def congrats(winner):
+    messagebox.showinfo('Parabéns!', 'As' + winner + 'venceram! 😎')
+
 def draw(display): #desenha o tabuleiro base, sem levar em consideracao as pecas
     cellSize = 100;
     display.fill((70,130,180));
@@ -38,7 +47,6 @@ def draw(display): #desenha o tabuleiro base, sem levar em consideracao as pecas
     for x in range(1, 9, 2):
         for y in range(1, 9, 2):
             pygame.draw.rect(display, (176,196,222), (x*cellSize, y*cellSize, cellSize, cellSize));
-
 
 
 
