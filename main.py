@@ -3,6 +3,10 @@ import board;
 __author__ = 'Luís Henrique Chesani';
 __email__ = 'lhchesani@inf.ufsm.br';
 
+
+icon = board.pygame.image.load('icon.png');
+board.pygame.display.set_icon(icon)
+
 if __name__ == '__main__':
     display = board.displayInit();
     board_ = board.init();
