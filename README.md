@@ -3,7 +3,7 @@
 
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/92533013/176064619-da1ae0f6-3a72-46b6-9ba1-f24f983e61df.png" width='400' alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/92533013/176072920-2a3d301f-9d2e-4a7d-a98c-46d79363592f.gif" width='400' alt="Sublime's custom image"/>
 </p>
 
 ## Como usar
