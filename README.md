@@ -18,7 +18,7 @@
 - Sistema de notações.
 - Na verificação de fim de jogo.
 
-## Bugs conhecidos até o momento
+## ~~Bugs conhecidos até o momento~~
 - Qualquer peça pode ir para onde desejar.
 
 ## Referências
