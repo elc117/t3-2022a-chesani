@@ -1,11 +1,20 @@
 # Xadrez com auxílio de programação funcional
+### Por Luís Henrique Chesani
 
-## Luís Henrique Chesani
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/92533013/176064619-da1ae0f6-3a72-46b6-9ba1-f24f983e61df.png" width='400' alt="Sublime's custom image"/>
 </p>
 
+## Como usar
+- Após clicar em uma peça, clique no local de destino.
+- Encostou, mexeu.
+### Esse é um xadrez mais violento
+- Existe fogo amigo.
+- Um jogo não termina com o rei encurralado, mas sim com a morte de algum dos reis.
+
+## Bugs conhecidos até o momento
+- Qualquer peça pode ir para onde desejar.
 
 ## Referências
 
