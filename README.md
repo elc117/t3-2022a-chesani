@@ -15,8 +15,8 @@
 
 ## Programação funcional
 É utilizada programação funcional nos seguintes itens
--Sistema de notações.
--Na verificação de fim de jogo.
+- Sistema de notações.
+- Na verificação de fim de jogo.
 
 ## Bugs conhecidos até o momento
 - Qualquer peça pode ir para onde desejar.
