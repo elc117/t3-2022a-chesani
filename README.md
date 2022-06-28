@@ -1,4 +1,4 @@
-# Xadrez com auxílio de programação funcional
+# Xadrez customizado com auxílio de programação funcional
 ### Por Luís Henrique Chesani
 
 
@@ -14,12 +14,15 @@
 - Um jogo não termina com o rei encurralado, mas sim com a morte de algum dos reis.
 
 ## Programação funcional
-É utilizada programação funcional nos seguintes itens
+### É utilizada programação funcional nos seguintes itens:
+- Inicialização do tabuleiro ainda sem as peças.
 - Sistema de notações.
 - Na verificação de fim de jogo.
+- Identificador de jogador vitorioso.
 
 ## ~~Bugs conhecidos até o momento~~
 - Qualquer peça pode ir para onde desejar.
+- Os botões da janela não funcionam.
 
 ## Referências
 
