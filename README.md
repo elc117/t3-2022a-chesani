@@ -9,7 +9,7 @@
 ## Como usar
 - Após clicar em uma peça, clique no local de destino.
 - Encostou, mexeu.
-### Esse é um xadrez mais violento
+### Violência
 - Existe fogo amigo.
 - Um jogo não termina com o rei encurralado, mas sim com a morte de algum dos reis.
 
