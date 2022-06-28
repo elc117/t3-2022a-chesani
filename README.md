@@ -23,8 +23,12 @@
 
 ## Referências
 
-Guia para um código limpo em Python: [Python Coding Guidelines](https://web.archive.org/web/20111010053227/http://jaynes.colorado.edu/PythonGuidelines.html#module_formatting).
+Guia para um código limpo: [Python Coding Guidelines](https://web.archive.org/web/20111010053227/http://jaynes.colorado.edu/PythonGuidelines.html#module_formatting).
+
+Biblioteca gráfica para jogos: [Pygame](https://www.pygame.org/docs/).
+
+Imagens: [Wikimedia - Chess bitmap pieces](https://commons.wikimedia.org/wiki/Category:Chess_bitmap_pieces).
 
 Guia para programação funcional em Python: [Functional Programming HOWTO](https://docs.python.org/3/howto/functional.html).
 
-[List Comprehension](https://www.geeksforgeeks.org/python-list-comprehension/) em Python
+Python e [List Comprehension](https://www.geeksforgeeks.org/python-list-comprehension/).
