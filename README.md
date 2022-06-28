@@ -3,9 +3,8 @@
 ## Luís Henrique Chesani
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/92533013/176063464-d6cc434a-0378-4331-a2a4-a8a865330ad4.png" alt="Sublime's custom image"/>
+  <img src="https://user-images.githubusercontent.com/92533013/176064619-da1ae0f6-3a72-46b6-9ba1-f24f983e61df.png" width='400' alt="Sublime's custom image"/>
 </p>
-
 
 
 ## Referências
